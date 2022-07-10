@@ -142,7 +142,7 @@ $(document).ready(function() {
                 $('#card').css("opacity", "1");
             },600);
 
-            $('#icon-image').onload = setTimeout(function(){
+            $('#card').onload = setTimeout(function(){
                 $('#card').css("animation", "slide-in 1s forwards");
             },300);
 
