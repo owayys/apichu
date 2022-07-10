@@ -168,13 +168,6 @@ input.search-collapse {
     justify-content: space-evenly;
 }
 
-.vl {
-    border-left: 2px solid rgb(180, 180, 180);
-    height: 99%;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
 #card-middle {
     width: 600px;
     align-items: center;
