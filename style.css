@@ -36,7 +36,7 @@ header > #logo {
     font-weight: 700;
     text-decoration: none;
     letter-spacing: 2px;
-    position: relative;
+    position: absolute;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
@@ -60,7 +60,7 @@ input {
     width: 45%;
     height: 40px;
     position: absolute;
-    top: 462px;
+    top: 48.5vh;
     right: 18%;
     background: none;
     border: 0;
@@ -82,7 +82,7 @@ input {
 #button-1 {
     color: #Fff;
     position: absolute;
-    top: 450px;
+    top: 48vh;
     right: 15%;
     vertical-align: middle;
     font-size: 40px;
@@ -133,7 +133,7 @@ input.search-collapse {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 60vh;
+    height: 58vh;
     width: 85%;
     transform: translateY(165px);
     background-color: #fff;
@@ -435,21 +435,22 @@ hr {
         position: fixed;
     }
     header > #logo {
-        top: 30vh;
+        top: 33vh;
+        font-size: 13vw;
     }
     input {
-        width: 280px;
-        height: 40px;
+        width: 68vw;
+        height: 5vh;
         position: absolute;
-        top: 400px;
-        right: 15%;
+        top: 46vh;
+        right: 16vw;
         font-size: 20px;
         font-weight: 300;
         text-align: center;
     }
     #button-1 {
-        top: 470px;
-        right: 45%;
+        top: 53vh;
+        right: 47vw;
         font-size: 30px;
     }
     @keyframes slide-off {

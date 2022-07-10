@@ -151,6 +151,7 @@ $(document).ready(function() {
 
     $("#form1").submit(function(e) {
         e.preventDefault();
+        window.scrollTo({top: 0, behavior: 'smooth'});
         $('#card').css("animation", "slide-off 0.7s forwards");
 
         $("header").addClass('header-collapse');
