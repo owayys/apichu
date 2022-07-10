@@ -426,6 +426,7 @@ hr {
     header {
         flex-direction: column;
         position: fixed;
+        align-items: center;
     }
     header > #logo {
         top: 33vh;
