@@ -1,5 +1,7 @@
 $(document).ready(function() {
     
+    var validName = true;
+    
     const sendRequest = (pokemon) => {
 
         const pokiman_url = "https://pokeapi.co/api/v2/pokemon/"
@@ -64,7 +66,8 @@ $(document).ready(function() {
                 $("#evo-1").attr("src", null);
                 $("#evo-2").attr("src", null);
             })
-            .catch(() => {
+            .catch((e) => {
+                $("#card").css("visibility", "hidden")
                 alert("Please Enter a VALID Pokemon name")
             })
 
@@ -139,22 +142,24 @@ $(document).ready(function() {
                 $('#card').css("opacity", "1");
             },600);
 
-            setTimeout(function(){
+            $('#icon-image').onload = setTimeout(function(){
                 $('#card').css("animation", "slide-in 1s forwards");
             },1000);
+
+            $("#card").css("visibility", "visible")
     }
 
     $("#form1").submit(function(e) {
         e.preventDefault();
-        $('#card').css("animation", "slide-off 1s forwards");
+        $('#card').css("animation", "slide-off 0.7s forwards");
 
         $("header").addClass('header-collapse');
+        $("#logo").addClass('logo-collapse')
         $("input").addClass('search-collapse')
         $("#button-1").addClass('search-collapse')
-        $("#logo").addClass('logo-collapse')
             
         $('.undercard').css("opacity", "1");
-        $('.undercard').css("animation", "slide-in 1s forwards");
+        $('.undercard').css("animation", "slide-in 0.7s forwards");
 
         var pokemon = $("#search-entry").val().toLowerCase();
         pokemon = pokemon.replace(/\s+/g, '-')

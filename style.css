@@ -25,6 +25,9 @@ header {
     margin-bottom: 80px;
     z-index: 10;
     height: 100vh;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
     transition: all 1s ease;
 }
 
@@ -34,6 +37,9 @@ header > #logo {
     text-decoration: none;
     letter-spacing: 2px;
     position: relative;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
     transition: all 1s ease;
 }
 
@@ -62,7 +68,15 @@ input {
     font-size: 30px;
     font-weight: 300;
     border-bottom: 1px solid #Fff;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
     transition: all 1s ease;
+}
+
+::placeholder {
+    color: #Fff;
+    opacity: 0.6;
 }
 
 #button-1 {
@@ -76,6 +90,9 @@ input {
     background: none;
     border: none;
     cursor: pointer;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
     transition: all 1s ease;
 }
 
@@ -252,7 +269,7 @@ hr {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 60vh;
+    height: 50vh;
     top: 70px;
     width: 85%;
     background-color: #D53B47;
@@ -302,12 +319,6 @@ hr {
 
 /* Type Icons */
 
-/* #type-row {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-} */
-
 .type-icon {
     display: inline-block;
     width: 140px;
@@ -323,7 +334,6 @@ hr {
     line-height: 1.5rem;
     text-align: center;
     text-transform: uppercase;
-    transition: opacity .4s;
 }
 
 .type-normal {
