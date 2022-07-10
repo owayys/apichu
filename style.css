@@ -443,9 +443,7 @@ hr {
         text-align: center;
     }
     #button-1 {
-        top: 53vh;
-        right: 47vw;
-        font-size: 30px;
+        display: none;
     }
     @keyframes slide-off {
         0% {top: 30px;
@@ -463,15 +461,9 @@ hr {
 
     header.header-collapse {
         font-size: 0.6em;
-        height: 180px;
+        height: 120px;
         margin-bottom: 0;
         background-color: #d53b48d2;
-    }
-    
-    #button-1.search-collapse {
-        font-size: 25px;
-        top: 144px;
-        right: 48vw;
     }
     
     input.search-collapse {
@@ -499,6 +491,7 @@ hr {
         padding-right: 15px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+        transform: translateY(120px);
     }
 
     #card-left {
