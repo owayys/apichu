@@ -144,7 +144,7 @@ $(document).ready(function() {
 
             $('#icon-image').onload = setTimeout(function(){
                 $('#card').css("animation", "slide-in 1s forwards");
-            },1000);
+            },300);
 
             $("#card").css("visibility", "visible")
     }

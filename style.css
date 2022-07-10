@@ -433,7 +433,7 @@ hr {
     }
     input {
         width: 68vw;
-        height: 5vh;
+        height: 4.4vh;
         position: absolute;
         top: 46vh;
         right: 16vw;
@@ -469,15 +469,15 @@ hr {
     
     #button-1.search-collapse {
         font-size: 25px;
-        top: 135px;
-        right: 45%;
+        top: 144px;
+        right: 48vw;
     }
     
     input.search-collapse {
-        width: 290px;
-        height: 40px;
+        width: 68vw;
+        right: 16vw;
+
         top: 75px;
-        right: 15%;
         font-size: 17px;
         font-weight: 300;
     }
@@ -485,7 +485,7 @@ hr {
     #logo.logo-collapse {
         font-size: 3.5em;
         font-weight: 700;
-        top: 0.3vh;
+        top: 2vh;
     }
 
     #card {
