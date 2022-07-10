@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/de9641045c.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/de9641045c.js" crossorigin="anonymous"></script>
+        <title>API.chu</title>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                API.chu
+            </div>
+            <div id="search-bar">
+                <form action="#" id="form1">
+                    <input autofocus type="text" placeholder="Enter Pokémon name" id="search-entry">
+                    <button id="button-1" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </header>
+        <div class="container">
+            <div class="undercard">
+                <div class="pokeball"></div>
+            </div>
+            <div id="card">
+                <div id="card-left">
+                    <div class="card-title" id="card-title-left">
+                    </div>
+                    <img id="icon-image" src="">
+                    <div id="evo-icons">
+                        <img id="evo-1" src="" height="90px" width="auto" alt="">
+                        <img id="evo-2" src="" height="90px" width="auto" alt="">
+                    </div>
+                </div>
+                <div id="card-middle">
+                    <div class="card-title" style="margin-bottom: 30px;">
+                        Pokédex data
+                    </div>
+                    <div class="vitals-row">
+                        <div class="statname">Height</div>
+                        <div class="statinfo" id="height"></div>
+                    </div>
+                    <hr>
+                    <div class="vitals-row">
+                        <div class="statname">Weight</div>
+                        <div class="statinfo" id="weight"></div>
+                    </div>
+                    <hr>
+                    <div class="vitals-row">
+                        <div class="statname">Abilities</div>
+                        <div class="statinfo">
+                            <div id="ability-0"></div>
+                            <div id="ability-1"></div>
+                            <div id="ability-2"></div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="vitals-row">
+                        <div class="statname">Type</div>
+                        <div class="statinfo"><div id="type-row"></div>
+                        </div>
+                    </div>
+                    <p id="pokemon-info"></p>
+                </div>
+                <div id="card-right">
+                    <div class="card-title" style="margin-bottom: 50px;">
+                        Stats
+                    </div>
+                    <div class="stats-row">
+                        <div class="power-cell">HP</div>
+                        <div class="loading-bar"><div class="loaded hp"></div></div>
+                        <div class="power-cell 0-max" style="text-align: center;">255</div>
+                    </div>
+                    <hr>
+                    <div class="stats-row">
+                        <div class="power-cell">ATK</div>
+                        <div class="loading-bar"><div class="loaded attack"></div></div>
+                        <div class="power-cell 1-max" style="text-align: center;">190</div>
+                    </div>
+                    <hr>
+                    <div class="stats-row">
+                        <div class="power-cell">DEF</div>
+                        <div class="loading-bar"><div class="loaded defense"></div></div>
+                        <div class="power-cell 2-max" style="text-align: center;">230</div>
+                    </div>
+                    <hr>
+                    <div class="stats-row">
+                        <div class="power-cell">SPATK</div>
+                        <div class="loading-bar"><div class="loaded special-attack"></div></div>
+                        <div class="power-cell 3-max" style="text-align: center;">194</div>
+                    </div>
+                    <hr>
+                    <div class="stats-row">
+                        <div class="power-cell">SPDEF</div>
+                        <div class="loading-bar"><div class="loaded special-defense"></div></div>
+                        <div class="power-cell 4-max" style="text-align: center;">230</div>
+                    </div>
+                    <hr>
+                    <div class="stats-row">
+                        <div class="power-cell">SPD</div>
+                        <div class="loading-bar"><div class="loaded speed"></div></div>
+                        <div class="power-cell 5-max" style="text-align: center;">180</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="code.js"></script>
+    </body>
+</html>

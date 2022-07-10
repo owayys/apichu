@@ -1,0 +1,571 @@
+* {
+    font-family: 'Hind Madurai', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D53B47;
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+
+header {
+    color: #Fff;
+    width: 100%;
+    padding: 20px 15.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 80px;
+    z-index: 10;
+    height: 100vh;
+    transition: all 1s ease;
+}
+
+header > #logo {
+    font-size: 4.5em;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 2px;
+    position: relative;
+    transition: all 1s ease;
+}
+
+header > #search-bar {
+    width: 100%;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+#search-bar {
+    display: flex;
+}
+
+input {
+    color: #Fff;
+    width: 45%;
+    height: 40px;
+    position: absolute;
+    top: 462px;
+    right: 18%;
+    background: none;
+    border: 0;
+    outline: 0;
+    font-size: 30px;
+    font-weight: 300;
+    border-bottom: 1px solid #Fff;
+    transition: all 1s ease;
+}
+
+#button-1 {
+    color: #Fff;
+    position: absolute;
+    top: 450px;
+    right: 15%;
+    vertical-align: middle;
+    font-size: 40px;
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+header.header-collapse {
+    font-size: 0.6em;
+    height: 85px;
+    background-color: #D53B47;;
+}
+
+#button-1.search-collapse {
+    font-size: 25px;
+    top: 25px;
+}
+
+input.search-collapse {
+    width: 25%;
+    top: 22px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#logo.logo-collapse {
+    font-size: 3.5em;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 2px;
+    float: left;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    z-index: 8;
+    overflow-y: none;
+}
+
+#card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 60vh;
+    width: 85%;
+    transform: translateY(165px);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px 30px;
+    position: absolute;
+    z-index: 9;
+    opacity: 0;
+}
+
+#card-left {
+    width: 600px;
+    align-items: center;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#icon-image {
+    margin-top: 15px;
+    max-height: 300px;
+}
+
+#evo-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.vl {
+    border-left: 2px solid rgb(180, 180, 180);
+    height: 99%;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#card-middle {
+    width: 600px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.vitals-row{
+    display: flex;
+    font-size: 1.3rem;
+    flex-direction: row;
+    justify-content: center;
+    margin: 12px;
+}
+
+hr {
+    background-color: rgb(172, 172, 172);
+    border: none;
+    height: 1px;
+}
+
+.statname {
+    font-size: 1.3rem;
+    text-align: right;
+    color: rgb(119, 119, 119);
+    width: 35%;
+}
+
+.statinfo {
+    font-size: 1.3rem;
+    text-align: left;
+    width: 50%;
+    padding-left: 70px;
+}
+
+.statinfo > div {
+    text-transform: capitalize;
+}
+
+.stats-row {
+    display: flex;
+    font-size: 1.3rem;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.loading-bar {
+    height: 15px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: inherit;
+    width: 60%;
+    margin-top: 15px;
+    transform: translateY(-10px);
+}
+
+.loaded {
+    height: 15px;
+    background-color: #D53B47;;
+    border-radius: 6px;
+}
+
+.power-cell {
+    font-size: 1.2rem;
+    text-align: right;
+    width: 15%;
+    margin-right: 20px;
+}
+
+#pokemon-info {
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+#card-right {
+    width: 600px;
+    align-items: center;
+    text-align: center;
+    padding: 0px 20px;
+    padding-right: 0;
+}
+
+#card-right > hr {
+    background-color: white;
+}
+
+.undercard {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    top: 70px;
+    width: 85%;
+    background-color: #D53B47;
+    border-radius: 10px;
+    z-index: 8;
+    opacity: 0;
+}
+
+/* pokeball from codepen */
+
+.pokeball {
+    width: 60px;
+    height: 60px;
+    background-color: #D53B47;
+    border-radius: 50% ;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid;
+    border-color: #fff;
+    animation: frames .8s  linear 0s infinite;
+}
+
+.pokeball:after{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    background-color: #D53B47;
+    border-bottom: 4px solid;
+    border-color: #fff;
+    top: -4px
+}
+
+.pokeball:before{
+    content: '';
+    position: absolute;
+    background-color: #D53B47;
+    width: 10px;
+    height:10px;
+    border: 4px solid;
+    border-radius: 50%;
+    border-color: #fff;
+    bottom: 18px;
+    right: 18px;
+    z-index: 1;
+}
+
+/* Type Icons */
+
+/* #type-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} */
+
+.type-icon {
+    display: inline-block;
+    width: 140px;
+    margin-right: 8px;
+    margin-bottom: 4px;
+    padding: 10px 10px;
+    background: #dbdbdb;
+    background-color: rgb(219, 219, 219);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: opacity .4s;
+}
+
+.type-normal {
+    background-color: #aa9;
+}
+
+.type-fire {
+    background-color: #f42;
+}
+
+.type-water {
+    background-color: #39f;
+}
+
+.type-electric {
+    background-color: #fc3;
+}
+
+.type-grass {
+    background-color: #7c5;
+}
+
+.type-ice {
+    background-color: #6cf;
+}
+
+.type-fighting {
+    background-color: #b54;
+}
+
+.type-poison {
+    background-color: #a59;
+}
+
+.type-ground {
+    background-color: #db5;
+}
+
+.type-flying {
+    background-color: #89f;
+}
+
+.type-psychic {
+    background-color: #f59;
+}
+
+.type-bug {
+    background-color: #ab2;
+}
+
+.type-rock {
+    background-color: #ba6;
+}
+
+.type-ghost {
+    background-color: #66b;
+}
+
+.type-dragon {
+    background-color: #76e;
+}
+
+.type-dark {
+    background-color: #754;
+}
+
+.type-steel {
+    background-color: #aab;
+}
+
+.type-fairy {
+    background-color: #e9e;
+}
+
+/* Animation */
+@keyframes frames{
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slide-off {
+    0% {top: 70px;}
+    100% {top: -1000px;}
+}
+
+@keyframes slide-in {
+    0% {top: 1000px;}
+    100% {top: 70px;}
+}
+
+
+@media screen and (max-width: 1300px) {
+    header {
+        flex-direction: column;
+        position: fixed;
+    }
+    header > #logo {
+        top: 30vh;
+    }
+    input {
+        width: 280px;
+        height: 40px;
+        position: absolute;
+        top: 400px;
+        right: 15%;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+    }
+    #button-1 {
+        top: 470px;
+        right: 45%;
+        font-size: 30px;
+    }
+    @keyframes slide-off {
+        0% {top: 30px;
+            right: 0px;}
+        100% {top: 30px;
+            right: 500px;}
+    }
+    
+    @keyframes slide-in {
+        0% {top: 30px;
+            right: 500px;}
+        100% {top: 30px;
+            right: 0px;}
+    }
+
+    header.header-collapse {
+        font-size: 0.6em;
+        height: 180px;
+        margin-bottom: 0;
+        background-color: #d53b48d2;
+    }
+    
+    #button-1.search-collapse {
+        font-size: 25px;
+        top: 135px;
+        right: 45%;
+    }
+    
+    input.search-collapse {
+        width: 290px;
+        height: 40px;
+        top: 75px;
+        right: 15%;
+        font-size: 17px;
+        font-weight: 300;
+    }
+    
+    #logo.logo-collapse {
+        font-size: 3.5em;
+        font-weight: 700;
+        top: 0.3vh;
+    }
+
+    #card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 1350px;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    #card-left {
+        width: 100%;
+        height: 450px;
+    }
+    #card-middle {
+        width: 100%;
+        height: 500px;
+    }
+
+    .statname {
+        font-size: 1.2rem;
+    }
+    .statinfo {
+        padding-left: 40px;
+    }
+
+    .stats-row {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    .power-cell {
+        font-size: 1rem;
+        text-align: right;
+        width: 15%;
+        margin-right: 12px;
+    }
+
+    .type-icon {
+        width: 100px;
+        margin-bottom: 4px;
+        padding: 8px 8px;
+        font-size: 1.1rem;
+    }
+    
+    #card-right {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .card-title {
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #icon-image {
+        width: 250px;
+        height: auto;
+    }
+
+    #evo-1 {
+        height: 70px;
+    }
+
+    #evo-2 {
+        height: 70px;
+    }
+
+    body {
+        overflow-y: scroll;
+        overflow-x: none;
+    }
+
+    .undercard {
+        position: fixed;
+        height: 95vh;
+        width: 100%;
+    }
+}
